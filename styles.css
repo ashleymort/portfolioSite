@@ -1,0 +1,460 @@
+/* global styles----------------------------------------*/
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  text-align: justify;
+  line-height: 2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  background-color: hsla(170, 15%, 45%, 1);
+}
+#fullName {
+  font-size: 3.75rem;
+  font-weight: bold;
+  padding-right: 20px;
+  font-family: Khand, sans-serif;
+  font-weight: bold;
+  position: relative;
+  color: hsla(54, 95%, 55%, 1);
+  background-color: hsla(170, 15%, 15%, 0.4);
+  margin-top: 0;
+  margin-bottom: 0;
+  border: none;
+}
+h1 {
+  font-size: 1.25rem;
+  padding-right: 20px;
+  font-family: Khand, sans-serif;
+  text-align: center;
+  color: hsla(170, 15%, 45%, 1);
+  background-color: hsla(170, 25%, 5%, 1);
+  padding: 10px;
+  margin-bottom: 1px;
+  margin-top: 0px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: Khand, sans-serif;
+  text-align: left;
+  padding-left: 10px;
+  background-color: hsla(170, 25%, 5%, 1);
+  margin: 0px;
+}
+
+section {
+  display: block;
+}
+
+/* navigation-------------------------------------------*/
+
+nav {
+  list-style: none;
+  font-family: Khand, sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+  background-color: hsla(170, 25%, 5%, 1);
+  margin-top: 0px;
+  margin-bottom: 1px;
+  border-style: solid;
+  border-color: hsla(54, 95%, 55%, 1);
+  border-width: 1px;
+  border-top: 0px;
+}
+
+nav a:link {
+  color: hsla(0, 95%, 35%, 1);
+  cursor: pointer;
+}
+nav a:visited {
+  text-decoration: none;
+  color: hsla(0, 95%, 35%, 0.8);
+}
+nav a :hover {
+  text-decoration: none;
+}
+
+nav a:active {
+  color: hsla(54, 95%, 55%, 1);
+}
+a {
+  color: hsla(0, 95%, 35%, 1);
+  margin: 20px;
+  padding: 5px;
+  font-size: 100%;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: hsla(0, 95%, 35%, 1);
+}
+
+/*footer style-------------------------------------*/
+
+.footer_subpages {
+  font-size: 30px;
+  font-family: Khand, sans-serif;
+  color: hsla(0, 95%, 35%, 1);
+  text-align: center;
+  margin-top: 0;
+}
+
+/*cookery page-----------------------------------------------*/
+
+.cookeryHeading {
+  font-family: Khand, sans-serif;
+  text-align: left;
+  background-image: url(/images/pizzaDough.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-style: solid;
+  border-color: hsla(54, 95%, 55%, 1);
+  border-width: 1px;
+  color: hsla(170, 15%, 85%, 1);
+  padding: 10px;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  margin-top: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  text-align: center;
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+  background-color: hsla(170, 15%, 45%, 1);
+}
+
+.circularPicture {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: hsla(54, 95%, 55%, 1);
+  border-width: 1px;
+  width: 25%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  color: hsla(170, 25%, 5%, 1);
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: hsla(170, 15%, 85%, 1);
+  font-family: Khand, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Number text (1/3 etc) */
+.numberText {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.75rem;
+  font-family: Khand, sans-serif;
+  padding: 8px 12px;
+  text-align: right;
+}
+
+/* Container for image text */
+.captionContainer {
+  text-align: center;
+  font-size: 1.125rem;
+  background-color: hsla(170, 25%, 5%, 1);
+  padding: 1px 16px;
+  color: hsla(54, 95%, 55%, 1);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  border-radius: 50%;
+  border: 1px solid hsla(54, 95%, 55%, 1);
+  margin-top: 1rem;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*gardening page------------------------------------------*/
+
+.gardeningHeading {
+  font-family: Khand, sans-serif;
+  font-size: 3.125rem;
+  text-align: left;
+  background-image: url(/images/myGarden.jpeg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  border-style: solid;
+  border-color: hsla(54, 95%, 55%, 1);
+  border-width: 1px;
+  color: hsla(170, 15%, 85%, 1);
+  padding: 10px;
+  margin-bottom: 0px;
+  position: relative;
+}
+.imageBackgroundColor {
+  background-color: hsla(170, 15%, 45%, 1);
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.gardeningPictures {
+  width: 25%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: hsla(54, 95%, 55%, 1);
+  border-width: 1px;
+  align-content: center;
+  margin: 20px;
+}
+
+/*webDesignPage--------------------------------------------------*/
+
+.webDesignHeading {
+  font-family: Khand, sans-serif;
+  font-size: 3.125rem;
+  text-align: left;
+  background-image: url(/images/webdesignBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  border-style: solid;
+  border-color: hsla(54, 95%, 55%, 1);
+  border-width: 1px;
+  color: hsla(170, 15%, 85%, 1);
+  padding: 10px;
+  margin-bottom: 0px;
+  position: relative;
+}
+.webDesignImages {
+  width: 25%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: hsla(54, 95%, 55%, 1);
+  border-width: 1px;
+  align-content: center;
+  margin: 20px;
+}
+
+.contactColor {
+  font-size: 1.25rem;
+  margin-top: 5px;
+  color: hsla(170, 15%, 45%, 1);
+  background-color: hsla(170, 25%, 5%, 1);
+  text-align: left;
+  padding-right: 20px;
+}
+
+/*main page-----------------------------------------------------*/
+.mainHeadingPicture {
+  font-family: Khand, sans-serif;
+  text-align: left;
+  font-size: 3.125rem;
+  background-image: url(/images/IMG_2565.jpeg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  border-style: solid;
+  border-color: hsla(54, 95%, 55%, 1);
+  border-width: 1px;
+  color: hsla(170, 15%, 85%, 1);
+  padding: 10px;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.careerTitle {
+  background-color: hsla(170, 25%, 5%, 1);
+  color: hsla(54, 95%, 55%, 1);
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.jobTitle {
+  color: hsla(54, 95%, 55%, 1);
+  background-color: hsla(170, 25%, 5%, 1);
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+}
+
+.project {
+  color: hsla(54, 95%, 55%, 1);
+  background-color: hsla(170, 25%, 5%, 1);
+  padding-left: 10px;
+}
+.introduction {
+  font-size: 1.125rem;
+  text-align: center;
+  background-color: hsla(170, 15%, 45%, 1);
+  margin-top: -20;
+  padding: 10px;
+}
+
+footer {
+  font-family: Khand, sans-serif;
+  background-color: hsla(170, 25%, 5%, 1);
+  text-align: center;
+  border-style: solid;
+  border-color: hsla(54, 95%, 55%, 1);
+  border-width: 1px;
+}
+
+.footerList {
+  font-size: 1rem;
+  font-weight: bold;
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.footerList a {
+  color: hsla(0, 95%, 35%, 1);
+}
+.footerList a :hover {
+  text-decoration: none;
+}
+.projectPictures {
+  width: 25%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: hsla(54, 95%, 55%, 1);
+  border-width: 1px;
+  align-content: center;
+  margin: 20px;
+}
+
+#books {
+  list-style: none;
+}
+
+.mainContent {
+  background-color: hsla(170, 15%, 45%, 1);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 380px) {
+  #fullName {
+    font-size: 50%;
+    overflow: initial;
+  }
+  nav {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  h1 {
+    text-align: center;
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .projectPictures {
+    width: 200px;
+    margin: 5px;
+  }
+  .introduction {
+    font-size: 14px;
+    text-align: justify;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .contactColor {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .footer_subpages {
+    text-align: left;
+    font-size: 10px;
+  }
+  .gardeningPictures {
+    width: 200px;
+    margin: 5px;
+  }
+  .webDesignImages {
+    width: 200px;
+    margin: 5px;
+  }
+  .footerList {
+    flex-wrap: wrap;
+    display: inline;
+    font-size: 14px;
+  }
+  .circularPicture {
+    width: 200%;
+  }
+  .captionContainer {
+    font-size: 10px;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+  }
+  .numberText {
+    font-size: 10px;
+  }
+}

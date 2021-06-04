@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookery</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Khand&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="cookeryHeading"><span id="fullName">Cookery</span></h1>
+    </header>
+    <nav class="navigation">
+    
+        
+            <a href="index.html">Home</a>
+            <a href="WebDesign.html">Web Design</a>
+            <a href="gardening.html">Gardening</a>
+            
+        
+    
+    </nav>
+
+    
+    <!--Container for image gallery-->
+    <div class="container">
+    
+        <!-- Full width images with number text -->
+        <div class="mySlides">
+            <div class="numberText">1 / 6</div>
+            <img src="images/freshLasagna.jpeg" class="circularPicture"  alt="baked lasagna">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numberText">2 / 6</div>
+            <img src="images/bakedMackerel.jpg" class="circularPicture"  alt="baked mackerel">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numberText">3 / 6</div>
+            <img src="images/goatsCheeseTart.jpg" class="circularPicture"  alt="goats cheese tart">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numberText">4 / 6</div>
+            <img src="images/cheesecake.jpg" class="circularPicture"  alt="strawberry cheesecake">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numberText">5 / 6</div>
+            <img src="images/burgers.jpg" class="circularPicture"  alt="ham burgers">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numberText">6 / 6</div>
+            <img src="images/lasagna.jpg" class="circularPicture"  alt="lasagna with salad">
+        </div>
+    
+        <!-- Next and previous buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <!-- image text --->
+        <div class="captionContainer">
+            <p id="caption"></p>
+        </div>
+    
+        <!--- thumbnail images-->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="images/freshLasagna.jpeg" style="width:100%" onclick="currentSlide(1)"
+                    alt="freshly baked lasagna">
+            </div>
+    
+            <div class="column">
+                <img class="demo cursor" src="images/bakedMackerel.jpg" style="width:100%" onclick="currentSlide(2)"
+                    alt="baked mackerel">
+            </div>
+    
+            <div class="column">
+                <img class="demo cursor" src="images/goatsCheeseTart.jpg" style="width:100%" onclick="currentSlide(3)"
+                    alt="goats cheese tart">
+            </div>
+    
+            <div class="column">
+                <img class="demo cursor" src="images/cheesecake.jpg" style="width:100%" onclick="currentSlide(4)"
+                    alt="strawberry cheesecake">
+            </div>
+    
+            <div class="column">
+                <img class="demo cursor" src="images/burgers.jpg" style="width:100%" onclick="currentSlide(5)"
+                    alt="burgers">
+            </div>
+    
+            <div class="column">
+                <img class="demo cursor" src="images/lasagna.jpg" style="width:100%" onclick="currentSlide(6)"
+                    alt="lasagna and salad">
+            </div>
+        </div>
+    </div>
+<script src="js/animationCookery.js"></script>
+<script src="js/slideshow.js"></script>
+
+</body>
+
+    <footer class="footer_subpages">
+        <h2 class="contactColor">Contact Me</h2>
+    
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul class="footerList">
+            <li><a href="mailto:ashleymort@hotmail.co.uk">ashleymort@hotmail.co.uk</a></li>
+            <li><a href="http://ashleymortimer.com" target="_blank">ashleymortimer.com</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">Facebook</a></li>
+        </ul>
+    </footer>
+
+</html>
